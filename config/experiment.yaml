@@ -1,0 +1,15 @@
+# Declarative benchmark settings
+database: data/experiment.db
+
+models:
+  - provider: openai
+    model: gpt-4o-mini
+    temperature: 0.0
+  - provider: gemini
+    model: gemini-2.0-flash
+    temperature: 0.0
+
+temperatures: [0.0, 0.5, 1.0]
+batch_size: 20
+requests_per_minute: 60
+retries: 3
